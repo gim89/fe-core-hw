@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 15px;
+}
+
+.clearfix:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.list{
+	margin-bottom: 5px;
+	color: #0e1116;
+	list-style: none;
+}
+.list-item{
+	float: left;
+	padding: 5px;
+	border: 1px solid black;
+	border-right: none;
+	cursor: pointer;
+}
+.list-item:last-child{
+	border-right: 1px solid black;
+}
+
+.list-item:hover{
+	background-color: grey;
+}
+
+.list-second > .list-item:nth-child(3n+1){
+	background-color: #88292f;
+}
+
+.list-second > .list-item:nth-child(3n+2){
+	background-color: #5db7de;
+}
+
+.list-second > .list-item:nth-child(3n+3){
+	background-color: #0d5d56;
+}
+
+.list-third > .list-item:before{
+	content: "→";
+	margin-right: 5px;
+}
+
+.passage-block{
+	margin-bottom: 15px;
+}
+
+.link{
+	text-decoration: none;
+	color: #000;
+}
+
+.passage{
+	text-indent: 25px;
+}
+
+.passage:target{
+	color: red;
+}
+
+.content, .aside{
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.content{
+	background-color: yellow;
+}
+
+.aside{
+	background-color: blue;
+}
+
+.list-fourth{
+	margin-top: 10px;
+	counter-reset: section;
+}
+
+.list-fourth > .list-item:before{
+	counter-increment: section;
+	content: "" counter(section);
+	margin-right: 5px;
+}
+
+
