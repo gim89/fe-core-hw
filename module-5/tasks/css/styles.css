@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+body{
+	background: url(../img/body-bg.png) no-repeat;
+	background-size: cover;
+	margin: 230px 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+}
+
+.wrapper{
+	width: 1024px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding-top: 118px;
+}
+
+.container{
+	width: 902px;
+	margin: 0 auto;
+}
+
+.page-top{
+	margin-bottom: 60px;
+}
+
+.page{
+	padding-bottom: 48px;
+	border-bottom: 1px solid #dedbdb;
+}
+
+.agency-profile{
+	float: left;
+	width: 73%;
+	margin-right: 2%;
+}
+
+.our-principles{
+	float: left;
+	width: 25%;
+}
+
+.title{
+	margin-bottom: 45px;
+	font-size: 26px;
+	font-weight: 300;
+	color: #263555;
+	text-transform: uppercase;
+}
+
+.picture-agency-profile{
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.passage-bold{
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #263555;
+}
+
+.passage{
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+.passage:last-child{
+	margin-bottom: 0;
+}
+
+.list{
+	counter-reset: section;
+	list-style: none;
+}
+
+.list-item{
+	margin-bottom: 25px;
+}
+
+.list-item:last-child{
+	margin-bottom: 0;
+}
+
+.list-item:before{
+	float: left;
+	display: inline-block;
+	counter-increment: section;
+	content: "" counter(section);
+	width: 27px;
+	height: 27px;
+	background-color: #38afe5;
+	margin-right: 12px;
+	text-align: center;
+	color: #fff;
+	line-height: 27px;
+	border: 1px solid #4998ba;
+	border-radius: 15px;
+}
+
+.article-item{
+	float: left;
+	width: calc(100% - 47px);
+}
+
+.list-title{
+	margin-bottom: 14px;
+	font-size: 15px;
+	color: #263555;
+}
+
+.list-passage{
+	font-size: 13px;
+	color: #4e5050;
+}
+
+.page-bottom{
+	padding-bottom: 86px;
+}
+
+.page-bottom-section{
+	float: left;
+}
+
+.what-we-offer{
+	float: left;
+	width: 73%;
+	margin-right: 2%;
+}
+
+.what-we-offer > .passage{
+	margin-bottom: 35px;
+}
+
+.testimonial{
+	float: left;
+	width: 25%;
+}
+
+.lists > .list{
+	float: left;
+	margin-right: 45px;
+}
+
+.lists > .list:last-child{
+	margin-right: 0;
+}
+
+.list-item-what-we-offer{
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: #263555;
+}
+
+.list-item-what-we-offer:last-child{
+	margin-bottom: 0;
+}
+
+.list-item-what-we-offer:before{
+	content: "→";
+	margin-right: 10px;
+	color: #38afe5;
+}
+
+.title-testimonial{
+	margin-bottom: 24px;
+}
+
+.passage-testimonial{
+	position: relative;
+	margin-bottom: 60px;
+	padding: 20px 25px;
+	font-size: 15px;
+	color: #3f4a64;
+	border: 1px solid #dedbdb;
+	border-radius: 5px;
+}
+.passage-testimonial:before,
+.passage-testimonial:after{
+	position: absolute;
+	bottom: -60px;
+	right: 82px;
+	display: inline-block;
+	content: "";
+	border: 30px solid transparent;
+    border-top: 30px solid #fff;
+}
+
+.passage-testimonial:before{
+	border: 32px solid transparent;
+	border-top: 32px solid #dedbdb;
+	bottom: -64px;
+	right: 80px;
+}
+
+.name-testimonial{
+	margin-bottom: 20px;
+	text-align: center;
+	color: #263555;
+}
+
+.name-testimonial + span{
+	display: block;
+	font-size: 13px;
+	color: #4e5050;
+	text-align: center;
+}
