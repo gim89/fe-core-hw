@@ -266,6 +266,10 @@ body{
     padding-bottom: 130px;
 }
 
+.destinations-cards{
+    width: 100%;
+}
+
 .destinations-title{
     margin-bottom: 48px;
     font-size: 30px;
